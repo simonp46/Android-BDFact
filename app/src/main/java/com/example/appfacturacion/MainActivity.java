@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
     private void IniciarSesion(String mcorreo, String mcontrasena) {
         database ohdb = new database(getApplicationContext(),"bdfacturacion1",null,1);
         SQLiteDatabase dbread = ohdb.getReadableDatabase();
-        String sqlquery = "Select correo, contrasena From Cliente Where correo='"+mcorreo+"' and contrasena= '"+mcontrasena+"'";
+        String sqlquery = "Select correo, contrasena, cedula From Cliente Where correo='"+mcorreo+"' and contrasena= '"+mcontrasena+"'";
         //tabla cusor.
         Cursor ccliente = dbread.rawQuery(sqlquery,null);
         if (ccliente.moveToFirst()){
             Intent aFactura = new Intent (getApplicationContext(),factura.class);
-            aFactura.putExtra("eCedula", identificacion.getText().toString().trim());
+            aFactura.putExtra("eCedula",ccliente.getString(2));
             startActivity(aFactura);
         }
         else{

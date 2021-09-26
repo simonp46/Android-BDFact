@@ -6,156 +6,176 @@
     android:layout_height="match_parent"
     tools:context=".factura"
     android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Factura"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Número de Factura"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        />
-    <EditText
-        android:id="@+id/etnrofacturaf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:hint="Ingrese nro factura"
-        android:gravity="center_horizontal"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Identificacion"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        />
-    <EditText
-        android:id="@+id/etidentfact"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:hint="Ingrese identificacion"
-        android:gravity="center_horizontal"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número de Factura"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/etnrofacturaf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Ingrese nro factura"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identificacion"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/etidentf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Ingrese identificacion"
+            android:gravity="center_horizontal"
+            android:enabled="false"
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        />
-    <EditText
-        android:id="@+id/etfechaf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:hint="Ingrese Fecha"
-        android:gravity="center_horizontal"
-        android:inputType="date"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valor Factura"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        />
-    <EditText
-        android:id="@+id/etvalorf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:hint="Ingrese valor"
-        android:gravity="center_horizontal"
-        android:inputType="number"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Saldo Factura"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        />
-    <EditText
-        android:id="@+id/etsaldof"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:inputType="number"
-        />
-    <Button
-        android:id="@+id/btnguardarf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:textAllCaps="false"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="110dp"
-        android:backgroundTint="#9A03A9F4"
-        />
-    <Button
-        android:id="@+id/btnbuscarf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Buscar"
-        android:textAllCaps="false"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="110dp"
-        android:backgroundTint="#9A03A9F4"
-        />
-    <Button
-        android:id="@+id/btnabonarf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Abonar"
-        android:textAllCaps="false"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="110dp"
-        android:backgroundTint="#9A03A9F4"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/etfechaf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Ingrese Fecha"
+            android:gravity="center_horizontal"
+            android:inputType="date"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Factura"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/etvalorf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Ingrese valor"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saldo Factura"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/etsaldof"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/btnguardarf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#9A03A9F4"
+            />
+        <Button
+            android:id="@+id/btnbuscarf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#9A03A9F4"
+            />
+        <Button
+            android:id="@+id/btnabonarf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Abonar"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#9A03A9F4"
+            />
 
-    <Button
-        android:id="@+id/btnactualizarf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Actualizar"
-        android:textAllCaps="false"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="110dp"
-        android:backgroundTint="#9A03A9F4"
-        />
-    <Button
-        android:id="@+id/btneliminarf"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Eliminar"
-        android:textAllCaps="false"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="110dp"
-        android:backgroundTint="#F61763"
-        />
-    <Button
-        android:id="@+id/btnlimpiar"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Limpiar"
-        android:textAllCaps="false"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="110dp"
-        android:backgroundTint="#172DF6"
-        />
-
-
-
-
+        <Button
+            android:id="@+id/btnactualizarf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#9A03A9F4"
+            />
+        <Button
+            android:id="@+id/btneliminarf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#F61763"
+            />
+        <Button
+            android:id="@+id/btnlimpiar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#172DF6"
+            />
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
