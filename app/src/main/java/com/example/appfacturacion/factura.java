@@ -38,7 +38,10 @@ public class factura extends AppCompatActivity implements View.OnClickListener{
         abono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), abonos.class));
+                Intent aAbonos = new Intent(getApplicationContext(), abonos.class);
+                aAbonos.putExtra("eNrofactura", nrofactura.getText().toString().trim());
+                aAbonos.putExtra("eSaldof",saldof.getText().toString().trim());
+                startActivity(aAbonos);
             }
         });
         limpiar.setOnClickListener(new View.OnClickListener() {
